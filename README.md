@@ -1,4 +1,4 @@
-<img width=500px src="http://www.nass3r.com/images/docker_nupic.png" />
+![docker_nupic](http://www.nass3r.com/images/docker_nupic.png")
 
 # Overview
 This is a docker image that comes with the following:
