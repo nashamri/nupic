@@ -18,7 +18,7 @@ This is a docker image that comes with the following:
     ```
     docker run -ti --net=host --rm -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY --privileged nashamri/nupic
     ```
-###Explaninations
+###Explanations
     * `--net=host`: allow the container to use the hosts network
     * `--rm`: to delete the image after exiting
     * `-v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY`: to let the container access the host's X server
