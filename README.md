@@ -10,7 +10,7 @@ This is a docker image that comes with the following:
 1.  Install docker and make sure it's running, more info (http://www.docker.com/)
 2.  Pull the image
     ````
-    `docker pull nashamri/nupic
+    docker pull nashamri/nupic
     ````
 3. Run the image
     ```
