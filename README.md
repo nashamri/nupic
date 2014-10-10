@@ -17,10 +17,10 @@ This is a docker image that comes with the following:
     docker run -ti --net=host --rm -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY --privileged nashamri/nupic
     ```
 ###Explaninations
-    --net=host`: allow the container to use the hosts network.
-    --rm`: to delete the image after exiting.
-    -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY`: to let the container access the host's X server
-    --privileged`: when using NuPIC Studio, this might provide hardware acceleration for OpenGL. I only tested this on Intel graphics.
+    * `--net=host`: allow the container to use the hosts network.
+    * `--rm`: to delete the image after exiting.
+    * `-v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY`: to let the container access the host's X server
+    * `--privileged`: when using NuPIC Studio, this might provide hardware acceleration for OpenGL. I only tested this on Intel graphics.
 
 4. Inside the image, you might need to start MySQL server to get the examples and swarming working.
     ```
