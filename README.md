@@ -15,8 +15,14 @@ This is a docker image that comes with the following:
     docker pull nashamri/nupic
     ````
 3. Run the image
+    * From Arch Linux host:
     ```
     docker run -ti --net=host --rm -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY --privileged nashamri/nupic
+    ```
+    
+    * From Ubuntu 14.04 host:
+    ```
+    docker run -ti --net=host --rm -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.Xauthority:/root/.Xauthority -e DISPLAY=$DISPLAY -e XAUTHORITY=/root/.Xauthority --privileged nashamri/nupic
     ```
 ###Explanations
     * `--net=host`: allow the container to use the hosts network
